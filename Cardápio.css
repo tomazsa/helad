@@ -1,0 +1,157 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: solid ; /* colocar a imagem de fundo aqui logo */
+  color: rgb(231, 124, 1);
+  min-height: 100vh;
+}
+
+header {
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 20px 50px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 40px;
+  font-weight: bold;
+  color: #ffd700;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 40px;
+}
+
+.nav-links a {
+  color: rgb(236, 143, 2);
+  text-decoration: none;
+  font-size: 22px;
+  transition: 0.3s;
+  font-weight: bold;
+}
+
+.nav-links a:hover {
+  color: #ffd700;
+}
+
+/*parte de configuração do cardápio */
+.hero {
+  text-align: center;
+  padding: 20px 20px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.hero h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 40px;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #ffd700;
+}
+/* distancia do menu em largura */
+
+.categories ul {
+  display: flex;
+  justify-content: center;
+  gap: 80px;
+  padding: 20px;
+  list-style: none;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.categories li {
+  font-weight: bold;
+  font-size: 20px;
+  padding: 8px 30px;
+  border-radius: 20px;
+  background-color: #ffd700;
+  color: black;
+}
+/* Estilo para os produtos */
+
+.product-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+  padding: 30px 30px;
+}
+
+.product-item {
+  background-color: rgba(240, 141, 11, 0.308);
+  border-radius: 16px;
+  padding: 20px;
+  width: 270px;
+  text-align: center;
+  transition: transform 0.3s ease;
+  box-shadow: 0 10px 10px rgba(0,0,0,0.3);
+}
+
+.product-item:hover {
+  transform: translateY(-5px);
+}
+
+.product-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.product-item h2 {
+  font-size: 30px;
+  margin-bottom: 8px;
+  color: #000000;
+  font-weight: bold;
+}
+
+.product-item p {
+  font-size: 14px;
+  margin-bottom: 10px;
+  color: #000000;
+}
+
+.product-item span {
+  font-size: 18px;
+  font-weight: bold;
+  color: #000000;
+}
+
+/* rodapé */
+
+footer {
+  text-align: center;
+  padding: 24px;
+  background-color: rgba(0, 0, 0, 0.5);
+  font-size: 14px;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .nav-links {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .product-list {
+    flex-direction: column;
+    align-items: center;
+  }
+}
