@@ -43,6 +43,8 @@ footer {
 footer a {
     margin: 30px;
     text-align: center;
+    panding: 24px;
+    font-size: 14px;
 
 }
 
