@@ -16,6 +16,10 @@ header {
   padding: 20px 50px;
 }
 
+.main {
+  padding-inline: 30px;
+  font-weight: bold;
+}
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -47,6 +51,7 @@ header {
 }
 
 /*parte de configuração do cardápio */
+
 .hero {
   text-align: center;
   padding: 20px 20px;
@@ -91,6 +96,7 @@ header {
   gap: 30px;
   justify-content: center;
   padding: 30px 30px;
+
 }
 
 .product-item {
@@ -101,6 +107,9 @@ header {
   text-align: center;
   transition: transform 0.3s ease;
   box-shadow: 0 10px 10px rgba(0,0,0,0.3);
+  border: 2px solid #e7b66d;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
 }
 
 .product-item:hover {
@@ -154,4 +163,5 @@ footer {
     flex-direction: column;
     align-items: center;
   }
+
 }
